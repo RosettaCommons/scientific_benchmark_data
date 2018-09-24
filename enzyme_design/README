@@ -1,0 +1,8 @@
+These proteins are the ones from the enzdes_benchmark runs, 
+as described as the "native sequence recovery benchmark" in Nivón et al. (2014) Proteins 82(5):858-66 https://doi.org/10.1002/prot.24463
+
+The corresponding PSSMs were generated with the 2.6.0 version of psiblast, using the BLAST nr database from 21May2014
+(yes, both the psiblast and nr database were old when this was done in late 2018) with the following command:
+
+    psiblast -query 1A99.fasta -db /path/to/db.21May2014/nr -out_pssm 1A99.chk -out_ascii_pssm 1A99.pssm -save_pssm_after_last_round
+
