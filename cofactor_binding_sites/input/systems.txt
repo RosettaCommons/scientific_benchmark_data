@@ -1,0 +1,7 @@
+3DK9 FAD Pyr_redox
+1ZK4 NAP Alcohol_Dehydrogenase
+3DLC SAM Methyltransferase
+2XBN PMP Aminotransferase
+3R2Q GSH GST
+1F4P FMN Flavodoxin
+3S6F COA Acetyltransferase
