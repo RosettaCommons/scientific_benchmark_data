@@ -1,6 +1,4 @@
 SEQUENCE: 
-SCORE: total_score description 
-SCORE:       0.000 1AFO_tr_0001
-SCORE:       0.000 1AFO_tr_0001
-SCORE:       0.000 1AFO_tr_0001
-SCORE:       0.000 1AFO_tr_0001
+SCORE: total_score       score dslf_fa13    fa_atr    fa_dun   fa_elec fa_intra_rep fa_intra_sol_xover4              fa_rep              fa_sol fa_water_to_bilayer hbond_bb_sc hbond_lr_bb    hbond_sc hbond_sr_bb linear_chainbreak lk_ball_wtd       omega overlap_chainbreak            p_aa_pp pro_close rama_prepro         ref        time yhh_planarity description 
+SCORE:     879.686     879.686     0.000  -387.721   550.296   -87.512        1.999              15.895             414.365             287.867             -33.912      -0.560       0.000       0.000     -53.008             0.000      -6.734      -0.198              0.000              0.360     1.655     104.604      72.289       0.000         0.000 1AFO_tr_ignorechain_0001
+SCORE:    -119.243     0.000  -376.794    38.658   -94.201        1.200               9.894              53.985             247.494             -56.072      -2.050       0.000       0.000     -53.008      -9.651      -0.018     -19.853     5.798      43.782      91.592         0.000 1AFO_tr_ignorechain_0001
