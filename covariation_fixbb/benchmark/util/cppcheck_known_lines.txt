@@ -1,0 +1,371 @@
+[core/kinematics/FoldTree.cc:237]: (performance) Use const reference for 'old_jump_edge' to avoid unnecessary data copying.
+[core/kinematics/Edge.hh:46]: (warning) Redundant code: Found a statement that begins with numeric constant.
+[core/kinematics/Edge.hh:47]: (warning) Redundant code: Found a statement that begins with numeric constant.
+[core/fragment/FragID_Iterator.cc:88]: (warning) Member variable 'FragID_Iterator::my_frag_id_' is not assigned a value in 'FragID_Iterator::operator='.
+[core/init/score_function_corrections.cc:448] -> [core/init/score_function_corrections.cc:445]: (style) Found duplicate branches for 'if' and 'else'.
+[core/init/score_function_corrections.cc:467] -> [core/init/score_function_corrections.cc:464]: (style) Found duplicate branches for 'if' and 'else'.
+[core/io/serialization/serialize_pose.hh:31]: (style) 'struct BUFFER' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::cutpoint_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::cutpoint_map_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::edge_count' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::is_cutpoint_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::is_jump_point_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::jump_edge_count' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::jump_edge_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::jump_point_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::min_edge_count' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::new_order' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::nres_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::num_cutpoint_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/FoldTree.hh:112]: (warning) Member variable 'FoldTree::num_jump_' is not assigned a value in 'FoldTree::operator='.
+[core/kinematics/tree/Atom_.hh:94]: (warning) Member variable 'Atom_::raw_parent_' is not assigned a value in 'Atom_::operator='.
+[core/optimization/LineMinimizer.hh:197] -> [core/optimization/LineMinimizer.hh:134]: (warning) The class 'StrongWolfeLineMinimization' defines member variable with name '_nonmonotone' also defined in its parent class 'LineMinimizationAlgorithm'.
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.cc:374]: (warning) Member variable 'DoubleDensePDEdge::curr_state_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.cc:51]: (warning) Member variable 'DoubleDensePDNode::alternate_state_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.cc:51]: (warning) Member variable 'DoubleDensePDNode::alternate_state_one_body_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.cc:51]: (warning) Member variable 'DoubleDensePDNode::alternate_state_total_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.cc:51]: (warning) Member variable 'DoubleDensePDNode::current_state_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.cc:51]: (warning) Member variable 'DoubleDensePDNode::curr_state_one_body_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.hh:133]: (style) C-style pointer casting
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.hh:139]: (style) C-style pointer casting
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.hh:145]: (style) C-style pointer casting
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.hh:233]: (style) C-style pointer casting
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.hh:239]: (style) C-style pointer casting
+[core/pack/interaction_graph/DoubleDensePDInteractionGraph.hh:308]: (style) C-style pointer casting
+[core/pack/interaction_graph/DoubleLazyInteractionGraph.cc:1237]: (warning) Member variable 'DoubleLazyInteractionGraph::node_considering_alt_state_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleLazyInteractionGraph.cc:1237]: (warning) Member variable 'DoubleLazyInteractionGraph::num_commits_since_last_update_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleLazyInteractionGraph.cc:1237]: (warning) Member variable 'DoubleLazyInteractionGraph::sqr_num_aa_types_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleLazyInteractionGraph.cc:1237]: (warning) Member variable 'DoubleLazyInteractionGraph::total_energy_alternate_state_assignment_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleLazyInteractionGraph.cc:1237]: (warning) Member variable 'DoubleLazyInteractionGraph::total_energy_current_state_assignment_' is not initialized in the constructor.
+[core/pack/interaction_graph/DoubleLazyInteractionGraph.hh:325]: (portability) The extra qualification 'DoubleLazyEdge::' is unnecessary and is considered an error by many compilers.
+[core/pack/interaction_graph/DoubleLazyInteractionGraph.hh:326]: (portability) The extra qualification 'DoubleLazyEdge::' is unnecessary and is considered an error by many compilers.
+[core/pack/interaction_graph/FASTERInteractionGraph.cc:53]: (warning) Member variable 'FASTERNode::alternate_state_' is not initialized in the constructor.
+[core/pack/interaction_graph/FASTERInteractionGraph.cc:53]: (warning) Member variable 'FASTERNode::alternate_state_one_body_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/FASTERInteractionGraph.cc:53]: (warning) Member variable 'FASTERNode::alternate_state_total_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/FASTERInteractionGraph.cc:53]: (warning) Member variable 'FASTERNode::current_state_' is not initialized in the constructor.
+[core/pack/interaction_graph/FASTERInteractionGraph.cc:53]: (warning) Member variable 'FASTERNode::curr_state_one_body_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/FASTERInteractionGraph.hh:295]: (style) C-style pointer casting
+[core/pack/interaction_graph/FASTERInteractionGraph.hh:301]: (style) C-style pointer casting
+[core/pack/interaction_graph/FixedBBInteractionGraph.cc:107]: (style) C-style pointer casting
+[core/pack/interaction_graph/InteractionGraphBase.cc:445]: (warning) Member variable 'EdgeBase::pos_in_nodes_edge_vector_' is not initialized in the constructor.
+[core/pack/interaction_graph/LazyInteractionGraph.cc:1347]: (warning) Member variable 'LazyInteractionGraph::node_considering_alt_state_' is not initialized in the constructor.
+[core/pack/interaction_graph/LazyInteractionGraph.cc:1347]: (warning) Member variable 'LazyInteractionGraph::num_aa_types_' is not initialized in the constructor.
+[core/pack/interaction_graph/LazyInteractionGraph.cc:1347]: (warning) Member variable 'LazyInteractionGraph::num_commits_since_last_update_' is not initialized in the constructor.
+[core/pack/interaction_graph/LazyInteractionGraph.cc:1347]: (warning) Member variable 'LazyInteractionGraph::total_energy_alternate_state_assignment_' is not initialized in the constructor.
+[core/pack/interaction_graph/LazyInteractionGraph.cc:1347]: (warning) Member variable 'LazyInteractionGraph::total_energy_current_state_assignment_' is not initialized in the constructor.
+[core/pack/interaction_graph/LazyInteractionGraph.hh:317]: (portability) The extra qualification 'LazyEdge::' is unnecessary and is considered an error by many compilers.
+[core/pack/interaction_graph/LazyInteractionGraph.hh:318]: (portability) The extra qualification 'LazyEdge::' is unnecessary and is considered an error by many compilers.
+[core/pack/interaction_graph/LinearMemoryInteractionGraph.hh:336]: (portability) The extra qualification 'LinearMemEdge::' is unnecessary and is considered an error by many compilers.
+[core/pack/interaction_graph/LinearMemoryInteractionGraph.hh:337]: (portability) The extra qualification 'LinearMemEdge::' is unnecessary and is considered an error by many compilers.
+[core/pack/interaction_graph/OnTheFlyInteractionGraph.cc:530]: (style) C-style pointer casting
+[core/pack/interaction_graph/OnTheFlyInteractionGraph.cc:548]: (style) C-style pointer casting
+[core/pack/interaction_graph/OnTheFlyInteractionGraph.cc:562]: (style) C-style pointer casting
+[core/pack/interaction_graph/OnTheFlyInteractionGraph.cc:574]: (style) C-style pointer casting
+[core/pack/interaction_graph/PDInteractionGraph.cc:1423]: (warning) Member variable 'PDInteractionGraph::num_file_aa_types_' is not initialized in the constructor.
+[core/pack/interaction_graph/PDInteractionGraph.cc:1423]: (warning) Member variable 'PDInteractionGraph::num_nodes_in_file_' is not initialized in the constructor.
+[core/pack/interaction_graph/PDInteractionGraph.cc:51]: (warning) Member variable 'PDNode::alternate_state_' is not initialized in the constructor.
+[core/pack/interaction_graph/PDInteractionGraph.cc:51]: (warning) Member variable 'PDNode::alternate_state_one_body_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/PDInteractionGraph.cc:51]: (warning) Member variable 'PDNode::alternate_state_total_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/PDInteractionGraph.cc:51]: (warning) Member variable 'PDNode::curr_state_one_body_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/PDInteractionGraph.cc:773]: (warning) Member variable 'PDEdge::curr_state_energy_' is not initialized in the constructor.
+[core/pack/interaction_graph/PDInteractionGraph.hh:490]: (style) C-style pointer casting
+[core/pack/interaction_graph/PDInteractionGraph.hh:495]: (style) C-style pointer casting
+[core/pack/interaction_graph/PDInteractionGraph.hh:501]: (style) C-style pointer casting
+[core/pack/interaction_graph/PrecomputedPairEnergiesInteractionGraph.cc:113]: (style) C-style pointer casting
+[core/pack/interaction_graph/PrecomputedPairEnergiesInteractionGraph.cc:131]: (style) C-style pointer casting
+[core/pack/interaction_graph/PrecomputedPairEnergiesInteractionGraph.cc:42]: (style) C-style pointer casting
+[core/pack/interaction_graph/PrecomputedPairEnergiesInteractionGraph.cc:67]: (style) C-style pointer casting
+[core/pack/interaction_graph/PrecomputedPairEnergiesInteractionGraph.cc:90]: (style) C-style pointer casting
+[core/pack/interaction_graph/SymmOnTheFlyInteractionGraph.cc:867]: (style) C-style pointer casting
+[core/pack/interaction_graph/SymmOnTheFlyInteractionGraph.cc:881]: (style) C-style pointer casting
+[core/pack/interaction_graph/SymmOnTheFlyInteractionGraph.cc:893]: (style) C-style pointer casting
+[core/pack/scmin/CartSCMinMinimizerMap.hh:187] -> [core/pack/scmin/SCMinMinimizerMap.hh:199]: (warning) The class 'CartSCMinMinimizerMap' defines member variable with name 'domain_map_' also defined in its parent class 'SCMinMinimizerMap'.
+[core/scoring/constraints/Constraints.cc:52]: (warning) Member variable 'Constraints::constraints_' is not initialized in the constructor.
+[core/scoring/constraints/Constraints.cc:76]: (warning) Member variable 'Constraints::constraints_' is not assigned a value in 'Constraints::operator='.
+[core/scoring/ContextGraph.cc:41]: (style) 'operator=' should return reference to 'this' instance.
+[core/scoring/elec/ElecAtom.hh:101]: (style) Comparison of a function returning boolean value using relational (<, >, <= or >=) operator.
+[core/scoring/hbonds/HBondDatabase.cc:108]: (performance) Variable 'params_database_tag_' is assigned in constructor body. Consider performing initialization in initialization list.
+[core/scoring/hbonds/hbonds_geom.cc:333] -> [core/scoring/hbonds/hbonds_geom.cc:328]: (style) Found duplicate branches for 'if' and 'else'.
+[core/scoring/hbonds/hbonds_geom.cc:498] -> [core/scoring/hbonds/hbonds_geom.cc:493]: (style) Found duplicate branches for 'if' and 'else'.
+[core/scoring/MinimizationGraph.cc:690]: (warning) Member variable 'MinimizationGraph::fixed_energies_' is not initialized in the constructor.
+[core/scoring/motif/motif_hash_stuff.cc:2140]: (style) C-style pointer casting
+[core/scoring/PairEPotential.hh:58]: (style) Consecutive return, break, continue, goto or throw statements are unnecessary.
+[core/scoring/saxs/FormFactor.cc:35]: (warning) Member variable 'FormFactor::glob_flag_' is not initialized in the constructor.
+[core/scoring/saxs/FormFactor.cc:39]: (performance) Variable 'name_' is assigned in constructor body. Consider performing initialization in initialization list.
+[core/scoring/SS_Info.fwd.hh:25] -> [protocols/fldsgn/topology/SS_Info2.fwd.hh:46]: (style) The struct 'Strands' forward declaration is unnecessary. Type struct is already declared earlier.
+[core/scoring/SS_Info.fwd.hh:26] -> [protocols/fldsgn/topology/SS_Info2.fwd.hh:45]: (style) The struct 'Helices' forward declaration is unnecessary. Type struct is already declared earlier.
+[core/scoring/TenANeighborGraph.cc:170]: (style) 'operator=' should return reference to 'this' instance.
+[core/scoring/TwelveANeighborGraph.cc:122]: (style) 'operator=' should return reference to 'this' instance.
+[core/sequence/DP_Matrix.hh:67]: (warning) Member variable 'Cell::coords_' is not assigned a value in 'Cell::operator='.
+[core/sequence/DP_Matrix.hh:67]: (warning) Member variable 'Cell::type_' is not assigned a value in 'Cell::operator='.
+[numeric/MathMatrix.hh:50]: (style) 'class MathMatrix' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[numeric/MathVector.hh:54]: (style) 'class MathVector' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[ObjexxFCL/ObserverMulti.hh:73]: (warning) Member variable 'ObserverMulti::observers_p_' is not assigned a value in 'ObserverMulti::operator='.
+[ObjexxFCL/ObserverSingle.hh:70]: (warning) Member variable 'ObserverSingle::observer_p_' is not assigned a value in 'ObserverSingle::operator='.
+[protocols/antibody/design/CDRGraftDesignOptions.cc:50]: (warning) Member variable 'CDRGraftDesignOptions::cdr_' is not initialized in the constructor.
+[protocols/antibody/grafting/scs_subst_mat.cc:96] -> [protocols/antibody/grafting/scs_subst_mat.cc:96]: (style) Same expression on both sides of '<'.
+[protocols/canonical_sampling/ParallelTempering.cc:118]: (warning) Member variable 'ParallelTempering::rank_' is not initialized in the constructor.
+[protocols/canonical_sampling/TemperingBase.cc:101]: (warning) Member variable 'TemperingBase::stats_line_output_' is not initialized in the constructor.
+[protocols/canonical_sampling/TemperingBase.cc:101]: (warning) Member variable 'TemperingBase::stats_silent_output_' is not initialized in the constructor.
+[protocols/docking/DockingHighRes.cc:112]: (warning) Member variable 'DockingHighRes::ignore_default_task_' is not initialized in the constructor.
+[protocols/docking/DockingHighRes.cc:118]: (performance) Variable 'partners_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/enzdes/EnzFilters.hh:114]: (warning) Member variable 'LigInterfaceEnergyFilter::include_cstE_' is not initialized in the constructor.
+[protocols/enzdes/EnzFilters.hh:157]: (warning) Member variable 'EnzScoreFilter::is_cstE_' is not initialized in the constructor.
+[protocols/enzdes/EnzFilters.hh:157]: (warning) Member variable 'EnzScoreFilter::whole_pose_' is not initialized in the constructor.
+[protocols/enzdes/EnzFilters.hh:228]: (warning) Member variable 'RepackWithoutLigandFilter::calc_dE_' is not initialized in the constructor.
+[protocols/enzdes/EnzFilters.hh:228]: (warning) Member variable 'RepackWithoutLigandFilter::calc_rms_' is not initialized in the constructor.
+[protocols/enzdes/EnzFilters.hh:228]: (warning) Member variable 'RepackWithoutLigandFilter::rms_all_rpked_' is not initialized in the constructor.
+[protocols/enzdes/EnzFilters.hh:228]: (warning) Member variable 'RepackWithoutLigandFilter::use_cstids_' is not initialized in the constructor.
+[protocols/farna/fragments/TorsionSet.cc:34]: (warning) Member variable 'TorsionSet::secstruct' is not assigned a value in 'TorsionSet::operator='.
+[protocols/farna/fragments/TorsionSet.cc:34]: (warning) Member variable 'TorsionSet::torsions' is not assigned a value in 'TorsionSet::operator='.
+[protocols/farna/fragments/TorsionSet.cc:34]: (warning) Member variable 'TorsionSet::torsion_source_name' is not assigned a value in 'TorsionSet::operator='.
+[protocols/fldsgn/potentials/sspot/NatbiasHelicesSheetPotential.cc:63]: (warning) Member variable 'NatbiasHelicesSheetPotential::hh_scores_' is not initialized in the constructor.
+[protocols/fldsgn/potentials/sspot/NatbiasHelicesSheetPotential.cc:63]: (warning) Member variable 'NatbiasHelicesSheetPotential::hs_scores_' is not initialized in the constructor.
+[protocols/fldsgn/potentials/sspot/NatbiasHelixPairPotential.cc:66]: (warning) Member variable 'NatbiasHelixPairPotential::hh_scores_' is not initialized in the constructor.
+[protocols/fldsgn/topology/HSSTriplet.cc:54]: (warning) Member variable 'HSSTriplet::geometry_is_initialized_' is not initialized in the constructor.
+[protocols/fldsgn/topology/HSSTriplet.cc:54]: (warning) Member variable 'HSSTriplet::left_handed_' is not initialized in the constructor.
+[protocols/flxbb/DesignTask.cc:81]: (warning) Member variable 'DesignTask::task_operations_' is not initialized in the constructor.
+[protocols/genetic_algorithm/Entity.cc:186]: (warning) Member variable 'Entity::fitness_valid_' is not assigned a value in 'Entity::operator='.
+[protocols/hybridization/WeightedFragmentSmoothTrialMover.cc:46]: (performance) Function parameter 'residue_weights' should be passed by reference.
+[protocols/hybridization/WeightedFragmentTrialMover.cc:40]: (performance) Function parameter 'residue_weights' should be passed by reference.
+[protocols/jd2/archive/ArchiveManager.cc:339]: (style) The scope of the variable 'flag' can be reduced.
+[protocols/jd2/archive/ArchiveManager.cc:407]: (performance) Possible inefficient checking for 'jobs_completed_' emptiness.
+[protocols/jd2/archive/ArchiveManager.cc:468]: (performance) Possible inefficient checking for 'jobs_completed_' emptiness.
+[protocols/jd2/archive/ArchiveManager.cc:613]: (performance) Possible inefficient checking for 'jobs_completed_' emptiness.
+[protocols/jd2/archive/ArchiveManager.hh:299] -> [protocols/jd2/archive/ArchiveManager.hh:233]: (warning) The class 'ArchiveManager' defines member variable with name 'options_registered_' also defined in its parent class 'BaseArchiveManager'.
+[protocols/jd2/MSDJobDistributor.hh:31]: (style) The class 'MSDJobDistributor' does not have a constructor.
+[protocols/ligand_docking/LigandDockProtocol.cc:354]: (style) C-style pointer casting
+[protocols/ligand_docking/LigandDockProtocol.cc:355]: (style) C-style pointer casting
+[protocols/ligand_docking/ligand_options/Interface.hh:49]: (warning) Member variable 'InterfaceInfo::chain' is not initialized in the constructor.
+[protocols/ligand_docking/ligand_options/Interface.hh:50]: (warning) Member variable 'InterfaceInfo::chain' is not initialized in the constructor.
+[protocols/loophash/BackboneDB.hh:72]: (performance) Variable 'phi_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/loophash/BackboneDB.hh:73]: (performance) Variable 'psi_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/loophash/BackboneDB.hh:74]: (performance) Variable 'omega_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/loops/Loops.fwd.hh:24] -> [protocols/fldsgn/topology/SS_Info2.fwd.hh:47]: (style) The class 'Loops' forward declaration is unnecessary. Type class is already declared earlier.
+[protocols/match/downstream/DownstreamAlgorithm.hh:60]: (style) 'DownstreamAlgorithm::operator=' should return 'DownstreamAlgorithm &'.
+[protocols/match/output/MatchConsolidator.hh:86]: (style) Unused private function: 'MatchConsolidator::end_processing_of_regular_match_groups'
+[protocols/match/output/MatchConsolidator.hh:87]: (style) Unused private function: 'MatchConsolidator::end_processing_of_match_dspos1_groups'
+[protocols/matdes/InterfacePackingFilter.hh:67]: (performance) Function parameter 's' should be passed by reference.
+[protocols/moves/RampingMover.cc:173]: (style) C-style pointer casting
+[protocols/noesy_assign/CrossPeakInfo.hh:53]: (warning) Member variable 'CrossPeakInfo::exp_hash_' is not initialized in the constructor.
+[protocols/noesy_assign/PeakAssignmentResidueMap.cc:223]: (performance) Possible inefficient checking for 'symmetric_candidates_inv' emptiness.
+[protocols/noesy_assign/PeakAssignmentResidueMap.cc:239]: (performance) Possible inefficient checking for 'symmetric_candidates' emptiness.
+[protocols/noesy_assign/PeakAssignmentResidueMap.cc:361]: (style) Unused variable: intra_residue_NOEs_bg
+[protocols/noesy_assign/PeakFileFormat.cc:76]: (warning) Member variable 'PeakFileFormat::write_atom_names_' is not initialized in the constructor.
+[protocols/optimize_weights/IterativeOptEDriver.cc:3932]: (style) Consecutive return, break, continue, goto or throw statements are unnecessary.
+[protocols/optimize_weights/OptEData.cc:1222]: (warning) Member variable 'PNatRotOptEPositionData::n_wells_' is not initialized in the constructor.
+[protocols/protein_interface_design/filters/HbondsToAtomFilter.hh:53]: (warning) Member variable 'HbondsToAtomFilter::backbone_' is not initialized in the constructor.
+[protocols/protein_interface_design/filters/HbondsToAtomFilter.hh:53]: (warning) Member variable 'HbondsToAtomFilter::bb_bb_' is not initialized in the constructor.
+[protocols/protein_interface_design/filters/HbondsToAtomFilter.hh:53]: (warning) Member variable 'HbondsToAtomFilter::sidechain_' is not initialized in the constructor.
+[protocols/protein_interface_design/filters/HbondsToAtomFilter.hh:54]: (warning) Member variable 'HbondsToAtomFilter::bb_bb_' is not initialized in the constructor.
+[protocols/protein_interface_design/movers/BackrubDDMover.hh:61] -> [protocols/calc_taskop_movers/DesignRepackMover.hh:101]: (warning) The class 'BackrubDDMover' defines member variable with name 'interface_distance_cutoff_' also defined in its parent class 'DesignRepackMover'.
+[protocols/protein_interface_design/movers/BuildAlaPose.hh:47] -> [protocols/calc_taskop_movers/DesignRepackMover.hh:101]: (warning) The class 'BuildAlaPose' defines member variable with name 'interface_distance_cutoff_' also defined in its parent class 'DesignRepackMover'.
+[protocols/protein_interface_design/movers/DesignMinimizeHbonds.hh:62] -> [protocols/calc_taskop_movers/DesignRepackMover.hh:101]: (warning) The class 'DesignMinimizeHbonds' defines member variable with name 'interface_distance_cutoff_' also defined in its parent class 'DesignRepackMover'.
+[protocols/relax/FastRelax.hh:48]: (performance) Variable 'command' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/rotamer_recovery/RotamerRecovery.cc:81]: (warning) Member variable 'RotamerRecovery::ignore_unrecognized_res_' is not initialized in the constructor.
+[protocols/scoring/InterfaceInfo.cc:57]: (performance) Variable 'interface_list_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsDataCenterManager.cc:82]: (performance) Variable 'PCS_data_all_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsDataLanthanide.cc:74]: (performance) Variable 'A_index_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsDataLanthanide.cc:76]: (performance) Variable 'cstyle_A_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsDataLanthanide.cc:78]: (performance) Variable 'cstyle_b_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsDataLanthanide.cc:79]: (performance) Variable 'cstyle_b_individual_scale_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsEnergyParameter.cc:85]: (performance) Variable 'vec_filename_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsEnergyParameter.cc:86]: (performance) Variable 'vec_individual_weight_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsEnergyParameter.cc:90]: (performance) Function parameter 'vec_filename' should be passed by reference.
+[protocols/scoring/methods/pcs2/PcsEnergyParameter.cc:91]: (performance) Function parameter 'vec_individual_weight' should be passed by reference.
+[protocols/scoring/methods/pcs2/PcsEnergyParameter.hh:80]: (performance) Function parameter 'vec_filename' should be passed by reference.
+[protocols/scoring/methods/pcs2/PcsEnergyParameter.hh:81]: (performance) Function parameter 'vec_individual_weight' should be passed by reference.
+[protocols/scoring/methods/pcs2/PcsGridSearchParameter.cc:127]: (performance) Variable 'filenames_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsGridSearchParameter.cc:128]: (performance) Variable 'individual_weights_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsInputCenter.cc:70]: (performance) Variable 'PcsInputFile_all_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsInputFile.cc:73]: (performance) Variable 'PcsInputLine_all_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsInputLine.hh:69]: (performance) Function parameter 'atom_name' should be passed by reference.
+[protocols/scoring/methods/pcs2/PcsTensor.cc:101]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcs2/PcsTensor.cc:108]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsTensor.cc:71]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs2/PcsTensor.hh:93]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcs/GridSearchIterator.cc:127]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcs/GridSearchIterator.cc:128]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcs/GridSearchIterator.cc:58]: (warning) Member variable 'GridSearchIterator::next_to_return_' is not initialized in the constructor.
+[protocols/scoring/methods/pcs/GridSearchIterator.hh:67]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcs/GridSearchIterator.hh:68]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftData.hh:170]: (performance) Function parameter 'exclude_residues' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftEnergy.hh:197]: (performance) Function parameter 'vec_exclude' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftEnergy.hh:217]: (performance) Function parameter 'vec_filename' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftEnergy.hh:218]: (performance) Function parameter 'vec_individual_weight' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftEnergy.hh:226]: (performance) Function parameter 'grid_atom_name_1' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftEnergy.hh:227]: (performance) Function parameter 'grid_atom_name_2' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftInput.cc:115]: (performance) Variable 'PCS_data_line_all_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs/PseudocontactShiftInput.cc:135]: (performance) Variable 'PCS_filename_and_data_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs/PseudocontactShiftInput.hh:74]: (performance) Function parameter 'atom_name' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftTensor.cc:100]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcs/PseudocontactShiftTensor.cc:107]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs/PseudocontactShiftTensor.cc:70]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcs/PseudocontactShiftTensor.hh:92]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/GridSearchIterator.cc:127]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/GridSearchIterator.cc:128]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/GridSearchIterator.cc:58]: (warning) Member variable 'GridSearchIterator_Ts1::next_to_return_' is not initialized in the constructor.
+[protocols/scoring/methods/pcsTs1/GridSearchIterator.hh:67]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/GridSearchIterator.hh:68]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftData.hh:162]: (performance) Function parameter 'exclude_residues' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftEnergy.hh:165]: (performance) Function parameter 'vec_exclude' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftEnergy.hh:185]: (performance) Function parameter 'vec_filename' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftEnergy.hh:186]: (performance) Function parameter 'vec_individual_weight' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftEnergy.hh:194]: (performance) Function parameter 'grid_atom_name_1' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftEnergy.hh:195]: (performance) Function parameter 'grid_atom_name_2' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftInput.cc:105]: (performance) Variable 'PCS_filename_and_data_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftInput.cc:85]: (performance) Variable 'PCS_data_line_all_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftInput.hh:77]: (performance) Function parameter 'atom_name' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftTensor.cc:100]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftTensor.cc:107]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftTensor.cc:70]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs1/PseudocontactShiftTensor.hh:92]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/GridSearchIterator.cc:127]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/GridSearchIterator.cc:128]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/GridSearchIterator.cc:58]: (warning) Member variable 'GridSearchIterator_Ts2::next_to_return_' is not initialized in the constructor.
+[protocols/scoring/methods/pcsTs2/GridSearchIterator.hh:67]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/GridSearchIterator.hh:68]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftData.hh:162]: (performance) Function parameter 'exclude_residues' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftEnergy.hh:165]: (performance) Function parameter 'vec_exclude' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftEnergy.hh:185]: (performance) Function parameter 'vec_filename' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftEnergy.hh:186]: (performance) Function parameter 'vec_individual_weight' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftEnergy.hh:194]: (performance) Function parameter 'grid_atom_name_1' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftEnergy.hh:195]: (performance) Function parameter 'grid_atom_name_2' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftInput.cc:105]: (performance) Variable 'PCS_filename_and_data_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftInput.cc:85]: (performance) Variable 'PCS_data_line_all_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftInput.hh:77]: (performance) Function parameter 'atom_name' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftTensor.cc:100]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftTensor.cc:107]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftTensor.cc:70]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs2/PseudocontactShiftTensor.hh:92]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/GridSearchIterator.cc:127]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/GridSearchIterator.cc:128]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/GridSearchIterator.cc:58]: (warning) Member variable 'GridSearchIterator_Ts3::next_to_return_' is not initialized in the constructor.
+[protocols/scoring/methods/pcsTs3/GridSearchIterator.hh:67]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/GridSearchIterator.hh:68]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftData.hh:169]: (performance) Function parameter 'exclude_residues' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftEnergy.hh:165]: (performance) Function parameter 'vec_exclude' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftEnergy.hh:185]: (performance) Function parameter 'vec_filename' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftEnergy.hh:186]: (performance) Function parameter 'vec_individual_weight' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftEnergy.hh:194]: (performance) Function parameter 'grid_atom_name_1' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftEnergy.hh:195]: (performance) Function parameter 'grid_atom_name_2' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftInput.cc:105]: (performance) Variable 'PCS_filename_and_data_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftInput.cc:85]: (performance) Variable 'PCS_data_line_all_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftInput.hh:77]: (performance) Function parameter 'atom_name' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftTensor.cc:100]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftTensor.cc:107]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftTensor.cc:70]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs3/PseudocontactShiftTensor.hh:92]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/GridSearchIterator.cc:127]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/GridSearchIterator.cc:128]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/GridSearchIterator.cc:58]: (warning) Member variable 'GridSearchIterator_Ts4::next_to_return_' is not initialized in the constructor.
+[protocols/scoring/methods/pcsTs4/GridSearchIterator.hh:67]: (performance) Function parameter 'coo1' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/GridSearchIterator.hh:68]: (performance) Function parameter 'coo2' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftData.hh:178]: (performance) Function parameter 'exclude_residues' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftEnergy.hh:165]: (performance) Function parameter 'vec_exclude' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftEnergy.hh:185]: (performance) Function parameter 'vec_filename' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftEnergy.hh:186]: (performance) Function parameter 'vec_individual_weight' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftEnergy.hh:194]: (performance) Function parameter 'grid_atom_name_1' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftEnergy.hh:195]: (performance) Function parameter 'grid_atom_name_2' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftInput.cc:114]: (performance) Variable 'PCS_filename_and_data_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftInput.cc:94]: (performance) Variable 'PCS_data_line_all_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftInput.hh:77]: (performance) Function parameter 'atom_name' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftTensor.cc:101]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftTensor.cc:108]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftTensor.cc:71]: (performance) Variable 'label_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/scoring/methods/pcsTs4/PseudocontactShiftTensor.hh:92]: (performance) Function parameter 'label' should be passed by reference.
+[protocols/simple_filters/EnergyPerResidueFilter.hh:32]: (warning) Member variable 'EnergyPerResidueFilter::bb_bb_' is not initialized in the constructor.
+[protocols/simple_filters/EnergyPerResidueFilter.hh:32]: (warning) Member variable 'EnergyPerResidueFilter::select_around_resnums_' is not initialized in the constructor.
+[protocols/simple_filters/EnergyPerResidueFilter.hh:32]: (warning) Member variable 'EnergyPerResidueFilter::select_resnums_' is not initialized in the constructor.
+[protocols/simple_filters/EnergyPerResidueFilter.hh:32]: (warning) Member variable 'EnergyPerResidueFilter::whole_interface_' is not initialized in the constructor.
+[protocols/simple_filters/EnergyPerResidueFilter.hh:32]: (warning) Member variable 'EnergyPerResidueFilter::whole_protein_' is not initialized in the constructor.
+[protocols/simple_filters/NeighborTypeFilter.hh:37]: (performance) Variable 'residue_types_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/simple_filters/SaveResfileToDiskFilter.hh:100]: (performance) Function parameter 'r' should be passed by reference.
+[protocols/simple_filters/SheetFilter.hh:48]: (warning) Member variable 'SheetFilter::handedness_score_' is not initialized in the constructor.
+[protocols/simple_filters/SheetFilter.hh:48]: (warning) Member variable 'SheetFilter::initialized_' is not initialized in the constructor.
+[protocols/simple_moves/asym_fold_and_dock/AsymFoldandDockRbTrialMover.cc:65]: (warning) Member variable 'AsymFoldandDockRbTrialMover::mc_filter_' is not initialized in the constructor.
+[protocols/simple_moves/BBConRotMover.hh:108] -> [protocols/simple_moves/BBGaussianMover.hh:181]: (warning) The class 'BBConRotMover' defines member variable with name 'dphi' also defined in its parent class 'BBGaussianMover'.
+[protocols/simple_moves/BBConRotMover.hh:110] -> [protocols/simple_moves/BBGaussianMover.hh:182]: (warning) The class 'BBConRotMover' defines member variable with name 'factorA_' also defined in its parent class 'BBGaussianMover'.
+[protocols/simple_moves/BBConRotMover.hh:111] -> [protocols/simple_moves/BBGaussianMover.hh:183]: (warning) The class 'BBConRotMover' defines member variable with name 'factorB_' also defined in its parent class 'BBGaussianMover'.
+[protocols/simple_moves/ReportEffectivePKA.hh:38]: (performance) Variable 'resname_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/simple_moves/TailsScoreMover.hh:38]: (warning) Member variable 'TailsScoreMover::m_done_all' is not initialized in the constructor.
+[protocols/simple_moves/TailsScoreMover.hh:38]: (warning) Member variable 'TailsScoreMover::m_number_of_hill_points' is not initialized in the constructor.
+[protocols/simple_moves/TailsScoreMover.hh:43]: (warning) Member variable 'TailsScoreMover::m_done_all' is not initialized in the constructor.
+[protocols/simple_moves/TailsScoreMover.hh:43]: (warning) Member variable 'TailsScoreMover::m_number_of_hill_points' is not initialized in the constructor.
+[protocols/topology_broker/SequenceNumberResolver.cc:47]: (performance) Variable 'offset_map_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/topology_broker/SequenceNumberResolver.cc:48]: (performance) Variable 'offset_map_reversed_' is assigned in constructor body. Consider performing initialization in initialization list.
+[protocols/viewer/triangleIterator.hh:30]: (style) 'class triangleIterator' does not have a copy constructor which is recommended since the class contains a pointer to allocated memory.
+[protocols/viewer/viewers.hh:96]: (performance) Function parameter 'empty_string' should be passed by reference.
+[protocols/wum/WorkUnitBase.cc:80]: (style) C-style pointer casting
+[protocols/wum/WorkUnitManager.hh:123]: (style) Unused private function: 'WorkUnitQueue_Swapped::set_swap_file'
+[utility/libsvm/Svm.cc:2022]: (style) C-style pointer casting
+[utility/libsvm/Svm.cc:2114]: (style) C-style pointer casting
+[utility/libsvm/Svm.cc:2716]: (style) C-style pointer casting
+[utility/libsvm/Svm.cc:2776]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2780]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2784]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2788]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2792]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2799]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2807]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2815]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2823]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2831]: (portability) scanf without field width limits can crash with huge input data on some versions of libc.
+[utility/libsvm/Svm.cc:2889]: (style) C-style pointer casting
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::active_set' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::active_size' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::alpha' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::alpha_status' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::Cn' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::Cp' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::eps' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::G_bar' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::G' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::l' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::p' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::QD' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::Q' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::unshrink' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:384]: (warning) Member variable 'Solver::y' is not initialized in the constructor.
+[utility/libsvm/Svm.cc:96]: (style) C-style pointer casting
+[utility/libsvm/Svm.cc:973]: (warning) Member variable 'Solver_NU::si' is not initialized in the constructor.
+[utility/graph/UpperEdgeGraph.hh:109]: (style) Unused private function: 'UEVertex::set_index_and_owner'
+[utility/graph/UpperEdgeGraph.hh:215]: (style) Unused private function: 'UEVertex::add_edge'
+[utility/graph/UpperEdgeGraph.hh:225]: (style) Unused private function: 'UEVertex::add_edge'
+[utility/graph/UpperEdgeGraph.hh:236]: (style) Unused private function: 'UEVertex::note_upper_edge_deleted'
+[utility/graph/UpperEdgeGraph.hh:243]: (style) Unused private function: 'UEVertex::note_lower_edge_deleted'
+[utility/graph/UpperEdgeGraph.hh:246]: (style) Unused private function: 'UEVertex::note_lower_edge_added'
+[utility/graph/UpperEdgeGraph.hh:507]: (style) Unused private function: 'UpperEdgeGraph::get_vertex_ptr'
+[utility/graph/UpperEdgeGraph.hh:510]: (style) Unused private function: 'UpperEdgeGraph::note_edge_deleted'
+[protocols/antibody/grafting/chothia_numberer.cc:85]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/grafter.cc:224]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/grafter.cc:225]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/grafter.cc:330]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/grafter.cc:331]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/grafter.cc:332]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/grafter.cc:333]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/grafter.cc:334]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/grafter.cc:335]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/regex_based_cdr_detection.cc:53]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/regex_based_cdr_detection.cc:54]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/regex_manager.cc:77]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/regex_manager.cc:78]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/regex_manager.cc:79]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/regex_manager.cc:80]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:105]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:106]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:107]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:131]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:132]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:133]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:292]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:293]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:294]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:382]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:383]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_blast.cc:384]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_functor.cc:60]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_functor.cc:61]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_multi_template.cc:53]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_multi_template.cc:54]: (warning) Redundant code: Found a statement that begins with string constant.
+[protocols/antibody/grafting/scs_multi_template.cc:55]: (warning) Redundant code: Found a statement that begins with string constant.
