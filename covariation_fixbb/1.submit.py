@@ -19,7 +19,7 @@ benchmark.load_variables()  # Python black magic: load all variables saved by pr
 config = benchmark.config()
 
 #==> EDIT HERE
-testname    = "fast_relax"
+testname    = "fxbb"
 
 debug       = config['debug']
 rosetta_dir = config['rosetta_dir']
@@ -35,6 +35,15 @@ command_line = '''
 -nstruct {nstruct}
 -parser:protocol {working_dir}/{testname}.xml
 -out:file:scorefile {prefix}/{target}.score
+
+–resfile ALLAA.res
+–ex1
+–ex2
+–extrachi_cutoff 0
+–nstruct 500
+–linmem_ig 10
+–no_his_his_pairE
+–minimize_sidechains
 
 -multiple_processes_writing_to_one_directory
 -no_color
