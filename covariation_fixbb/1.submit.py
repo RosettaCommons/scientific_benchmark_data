@@ -19,7 +19,7 @@ benchmark.load_variables()  # Python black magic: load all variables saved by pr
 config = benchmark.config()
 
 #==> EDIT HERE
-testname    = "fxbb"
+testname    = "covariation_fixbb"
 
 debug       = config['debug']
 rosetta_dir = config['rosetta_dir']
@@ -30,7 +30,7 @@ extension   = benchmark.calculate_extension()
 #==> EDIT HERE
 command_line = '''
 -database {rosetta_dir}/database
--in:file:s {rosetta_dir}/tests/scientific/data/{testname}/{target}.pdb
+-in:file:s {rosetta_dir}/tests/scientific/data/{testname}/inputs/{target}.pdb
 -in:file:native {rosetta_dir}/tests/scientific/data/{testname}/{target}.pdb
 -nstruct {nstruct}
 -parser:protocol {working_dir}/{testname}.xml
@@ -40,7 +40,6 @@ command_line = '''
 –ex1
 –ex2
 –extrachi_cutoff 0
-–nstruct 500
 –linmem_ig 10
 –no_his_his_pairE
 –minimize_sidechains
@@ -50,10 +49,10 @@ command_line = '''
 '''.replace('\n', ' ').replace('  ', ' ')
 
 #==> EDIT HERE
-nstruct = 2 if debug else 100
+nstruct = 2 if debug else 500
 
 #==> EDIT HERE
-targets = '1POH 1TTZ 2AQD 2DCF 2FKK 2NR7 2OSS 2RK6 3EA6 3ELF 3ESS 3K0M'.split()
+targets = '1AQT 1BXY 1CTF 1CZP 1FB0 1FQT 1GN0 1GUU 1JL3 1MVO 1OAP 1PTF 1T8K 1TEN 1TZV 1U2H 1UCS 1UNQ 1WVN 1Z2U 2A0B 2BWF 2EVB 2H3L 2O37 2O9S 2PND 2PPN 2QLC 2X1B 2Z3V 2ZXJ 3BR8 3F04 3FYM 3GQS 3GVA 3I2Z 3JVL 3MQI'.split()
 targets = targets[:2] if debug else targets
 
 #print(f'extension: {extension}')
@@ -72,7 +71,7 @@ for target in targets:
         name=f'{testname}-{target}',
 
         #==> EDIT HERE
-        executable = f'{rosetta_dir}/source/bin/rosetta_scripts.{extension}',
+        executable = f'{rosetta_dir}/source/bin/fixbb.{extension}',
         arguments = command_line.format_map(vars()),
         working_dir = prefix,
         jobs_to_queue = min(nstruct, 50),
@@ -88,7 +87,7 @@ for target in targets:
 hpc_driver.wait_until_complete(hpc_job_ids, silent=True)
 
 
-
+'''
 # Submitting PyRosetta job
 hpc_job_ids.append( hpc_driver.submit_hpc_job(
     name=f'{testname}-{PyRosetta-example-job}',
@@ -102,7 +101,7 @@ hpc_job_ids.append( hpc_driver.submit_hpc_job(
     time=24,
     block=False)
 )
-
+'''
 
 #==> EDIT HERE
 benchmark.save_variables('debug targets nstruct working_dir testname')  # Python black magic: save all listed variable to json file for next script use (save all variables if called without argument)
