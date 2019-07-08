@@ -1,0 +1,10 @@
+SecondarySimilarity	 350	 0.5 - psipred
+SecondarySimilarity 	 300	 0.5 - porter
+SecondarySimilarity 	 300	 0.5 - rdb
+ProfileScoreL1 		 50 	 1 -
+FragmentCrmsd		 30   	 0.0 -
+RamaScore		 100 	 2.0 - psipred
+RamaScore		 100 	 2.0 - porter
+RamaScore		 100 	 2.0 - rdb
+
+
