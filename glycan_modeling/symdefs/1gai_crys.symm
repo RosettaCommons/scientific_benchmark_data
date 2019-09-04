@@ -1,0 +1,43 @@
+symmetry_name 1gai_P_21_21_21
+E = 2*VRT_0_0_0_0_base + 2*(VRT_0_0_0_0_base:VRT_1_0_0_0_base) + 2*(VRT_0_0_0_0_base:VRT_0_0_0_1_base) + 2*(VRT_0_0_0_0_base:VRT_2_0_0_1_base)
+anchor_residue 1
+virtual_coordinates_start
+xyz VRT_0_0_0_0 1.000000,0.000000,0.000000 0.000000,1.000000,0.000000 40.917079,21.671138,21.497766
+xyz VRT_0_0_0_0_base 1.000000,0.000000,0.000000 0.000000,1.000000,0.000000 39.917079,20.671138,20.497766
+xyz VRT_1_0_0_0 -1.000000,0.000000,0.000000 -0.000000,-1.000000,0.000000 17.532921,-21.671138,45.697766
+xyz VRT_1_0_0_0_base -1.000000,0.000000,0.000000 -0.000000,-1.000000,0.000000 18.532921,-20.671138,44.697766
+xyz VRT_1_0_0_n1 -1.000000,0.000000,0.000000 -0.000000,-1.000000,0.000000 17.532921,-21.671138,-2.702234
+xyz VRT_1_0_0_n1_base -1.000000,0.000000,0.000000 -0.000000,-1.000000,0.000000 18.532921,-20.671138,-3.702234
+xyz VRT_0_0_0_1 1.000000,0.000000,0.000000 0.000000,1.000000,0.000000 40.917079,21.671138,69.897766
+xyz VRT_0_0_0_1_base 1.000000,0.000000,0.000000 0.000000,1.000000,0.000000 39.917079,20.671138,68.897766
+xyz VRT_0_0_0_n1 1.000000,0.000000,0.000000 0.000000,1.000000,0.000000 40.917079,21.671138,-26.902234
+xyz VRT_0_0_0_n1_base 1.000000,0.000000,0.000000 0.000000,1.000000,0.000000 39.917079,20.671138,-27.902234
+xyz VRT_2_0_0_1 1.000000,0.000000,0.000000 -0.000000,-1.000000,0.000000 99.367079,30.528862,26.902234
+xyz VRT_2_0_0_1_base 1.000000,0.000000,0.000000 -0.000000,-1.000000,0.000000 98.367079,31.528862,27.902234
+xyz VRT_2_n1_0_1 1.000000,0.000000,0.000000 -0.000000,-1.000000,0.000000 -17.532921,30.528862,26.902234
+xyz VRT_2_n1_0_1_base 1.000000,0.000000,0.000000 -0.000000,-1.000000,0.000000 -18.532921,31.528862,27.902234
+virtual_coordinates_stop
+connect_virtual JUMP_0_0_0_0_to_subunit VRT_0_0_0_0_base SUBUNIT
+connect_virtual JUMP_1_0_0_0_to_subunit VRT_1_0_0_0_base SUBUNIT
+connect_virtual JUMP_1_0_0_n1_to_subunit VRT_1_0_0_n1_base SUBUNIT
+connect_virtual JUMP_0_0_0_1_to_subunit VRT_0_0_0_1_base SUBUNIT
+connect_virtual JUMP_0_0_0_n1_to_subunit VRT_0_0_0_n1_base SUBUNIT
+connect_virtual JUMP_2_0_0_1_to_subunit VRT_2_0_0_1_base SUBUNIT
+connect_virtual JUMP_2_n1_0_1_to_subunit VRT_2_n1_0_1_base SUBUNIT
+connect_virtual JUMP_0_0_0_0_to_com VRT_0_0_0_0 VRT_0_0_0_0_base
+connect_virtual JUMP_1_0_0_0_to_com VRT_1_0_0_0 VRT_1_0_0_0_base
+connect_virtual JUMP_1_0_0_n1_to_com VRT_1_0_0_n1 VRT_1_0_0_n1_base
+connect_virtual JUMP_0_0_0_1_to_com VRT_0_0_0_1 VRT_0_0_0_1_base
+connect_virtual JUMP_0_0_0_n1_to_com VRT_0_0_0_n1 VRT_0_0_0_n1_base
+connect_virtual JUMP_2_0_0_1_to_com VRT_2_0_0_1 VRT_2_0_0_1_base
+connect_virtual JUMP_2_n1_0_1_to_com VRT_2_n1_0_1 VRT_2_n1_0_1_base
+connect_virtual JUMP_1_0_0_0 VRT_0_0_0_0 VRT_1_0_0_0
+connect_virtual JUMP_1_0_0_n1 VRT_0_0_0_0 VRT_1_0_0_n1
+connect_virtual JUMP_0_0_0_1 VRT_0_0_0_0 VRT_0_0_0_1
+connect_virtual JUMP_0_0_0_n1 VRT_0_0_0_0 VRT_0_0_0_n1
+connect_virtual JUMP_2_0_0_1 VRT_0_0_0_0 VRT_2_0_0_1
+connect_virtual JUMP_2_n1_0_1 VRT_0_0_0_0 VRT_2_n1_0_1
+set_dof JUMP_0_0_0_0_to_com x y z
+set_dof JUMP_0_0_0_0_to_subunit angle_x angle_y angle_z
+set_jump_group JUMPGROUP1  JUMP_0_0_0_0_to_subunit JUMP_1_0_0_0_to_subunit JUMP_1_0_0_n1_to_subunit JUMP_0_0_0_1_to_subunit JUMP_0_0_0_n1_to_subunit JUMP_2_0_0_1_to_subunit JUMP_2_n1_0_1_to_subunit
+set_jump_group JUMPGROUP2  JUMP_0_0_0_0_to_com JUMP_1_0_0_0_to_com JUMP_1_0_0_n1_to_com JUMP_0_0_0_1_to_com JUMP_0_0_0_n1_to_com JUMP_2_0_0_1_to_com JUMP_2_n1_0_1_to_com
