@@ -1,0 +1,6 @@
+
+#pool_id	 pool_name	 fraction
+1 		 psipred	 0.6
+2		 rdb    	 0.2
+3		 porter 	 0.2
+
