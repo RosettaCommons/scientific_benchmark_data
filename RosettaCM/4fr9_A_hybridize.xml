@@ -20,31 +20,17 @@
      <Superimpose name="superimpose" CA_only="0"/>
      <RunSimpleMetrics name="run_metrics" metrics="rmsd"/>
    <Hybridize name="hybridize" stage1_scorefxn="stage1" stage2_scorefxn="stage2" fa_scorefxn="fullatom" batch="1" stage1_increase_cycles="1.0" stage2_increase_cycles="1.0">
-<<<<<<< HEAD
        <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3u1w_A_4fr9_A.pdb" cst_file="%%ROSETTA%%/tests/scientific/data/%%TEST%%/4fr9_A.alignment.grishin.dist_csts" weight="1.000" />
       <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/2qu3_A_4fr9_A.pdb" cst_file="%%ROSETTA%%/tests/scientific/data/%%TEST%%/4fr9_A.alignment.grishin.dist_csts" weight="1.000" />
    </Hybridize>
    <FastRelax name="relax" scorefxn="fullatom"  />
-   <RmsdFromResidueSelectorFilter name="rmsd2" CA_only="0" use_gdt="1" superimpose="1" count_residues="1" reference_name="xstal" reference_selector="chA" query_selector="chA"  />
-=======
-       <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3u1w_A_4fr9_A.pdb" cst_file="AUTO" weight="1.000" />
-      <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/2qu3_A_4fr9_A.pdb" cst_file="AUTO" weight="1.000" />
-   </Hybridize>
-   <FastRelax name="relax" scorefxn="fullatom"  />
->>>>>>> 3883fb53205f24f3a2c1739b6decfbcbea9841d3
    </MOVERS>
    <PROTOCOLS>
        <Add mover="hybridize"/>
        <Add mover="relax"/>
        <Add mover="superimpose"/>
        <Add mover="run_metrics"/>
-<<<<<<< HEAD
-       <Add mover="rmsd2"/>
    </PROTOCOLS>
    <OUTPUT scorefxn="talaris2013" />
 </ROSETTASCRIPTS>
-=======
-   </PROTOCOLS>
-   <OUTPUT scorefxn="talaris2013" />
-</ROSETTASCRIPTS>
->>>>>>> 3883fb53205f24f3a2c1739b6decfbcbea9841d3
+
