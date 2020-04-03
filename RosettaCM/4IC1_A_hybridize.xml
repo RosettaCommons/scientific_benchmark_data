@@ -1,0 +1,53 @@
+<ROSETTASCRIPTS>
+   <SCOREFXNS>
+       <ScoreFunction name="stage1" weights="score3" symmetric="0"
+           <Reweight scoretype="atom_pair_constraint" weight="0.5"
+       </ScoreFunction>
+       <ScoreFunction name="stage2" weights="score4_smooth_cart" symmetric="0">
+           <Reweight scoretype="atom_pair_constraint" weight="0.5"/>
+       </ScoreFunction>
+       <ScoreFunction name="fullatom" weights="talaris2013_cart" symmetric="0">
+           <Reweight scoretype="atom_pair_constraint" weight="0.5"/>
+       </ScoreFunction>
+   </SCOREFXNS>
+   <RESIDUE_SELECTORS>
+       <Chain name="chA" chains="A"/>
+   </RESIDUE_SELECTORS>
+   <SIMPLE_METRICS>
+       <RMSDMetric name="rmsd" rmsd_type="rmsd_protein_bb_heavy" use_native="1"/>
+   </SIMPLE_METRICS>
+   <MOVERS>
+       <Superimpose name="superimpose" CA_only="0"/>
+       <RunSimpleMetrics name="run_metrics" metrics="rmsd"/>
+       <Hybridize name="hybridize" stage1_scorefxn="stage1" stage2_scorefxn="stage2" fa_scorefxn="fullatom" batch="1" stage1_increase_cycles="1.0" stage2_increase_cycles="1.0">
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1AVQ_B_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3H4R_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3K93_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3L0A_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1IJB_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1M10_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1MF7_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1PT6_B_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1RRK_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1SHU_X_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1T6B_Y_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1U0O_C_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2I6Q_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2ODP_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2WIN_I_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2X5N_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3BN3_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3IBS_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3N2N_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3N2N_F_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3RAG_A_4IC1_A.pdb" cst_file="AUTO" weight=1.000 />";
+       </Hybridize>
+       <FastRelax name="relax" scorefxn="fullatom"/>
+   </MOVERS>
+   <PROTOCOLS>
+       <Add mover=hybridize/>
+       <Add mover="relax"/>
+       <Add mover="superimpose"/>
+       <Add mover="run_metrics"/>
+   </PROTOCOLS>
+</ROSETTASCRIPTS>
