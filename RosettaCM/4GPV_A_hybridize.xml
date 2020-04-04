@@ -20,13 +20,13 @@
        <Superimpose name="superimpose" CA_only="0"/>
        <RunSimpleMetrics name="run_metrics" metrics="rmsd"/>
        <Hybridize name="hybridize" stage1_scorefxn="stage1" stage2_scorefxn="stage2" fa_scorefxn="fullatom" batch="1" stage1_increase_cycles="1.0" stage2_increase_cycles="1.0">
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3GF8_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3LIU_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3LIU_B_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3PAY_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3PAY_D_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3R4R_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3UP6_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
+           <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3GF8_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
+           <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3LIU_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
+           <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3LIU_B_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
+           <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3PAY_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
+           <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3PAY_D_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
+           <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3R4R_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
+           <Template pdb="%%ROSETTA%%/tests/scientific/data/%%TEST%%/3UP6_A_4GPV_A.pdb" cst_file="AUTO" weight="1.000" />
        </Hybridize>
        <FastRelax name="relax" scorefxn="fullatom"/>
    </MOVERS>
