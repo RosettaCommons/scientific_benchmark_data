@@ -20,22 +20,22 @@
        <Superimpose name="superimpose" CA_only="0"/>
        <RunSimpleMetrics name="run_metrics" metrics="rmsd"/>
        <Hybridize name="hybridize" stage1_scorefxn="stage1" stage2_scorefxn="stage2" fa_scorefxn="fullatom" batch="1" stage1_increase_cycles="1.0" stage2_increase_cycles="1.0">
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1IG7_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1SKN_P_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1WCL_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1X79_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2KO4_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2KZ5_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2OTO_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2WT7_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2WTY_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3A5T_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3A5T_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3C9I_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3DTP_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3KBT_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3O1H_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
-           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3TBI_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />";
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1IG7_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1SKN_P_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1WCL_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/1X79_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2KO4_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2KZ5_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2OTO_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2WT7_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/2WTY_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3A5T_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3A5T_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3C9I_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3DTP_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3KBT_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3O1H_A_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
+           <Template pdb="%ROSETTA%/tests/scientific/data/%TEST%/3TBI_B_2LZ1_A.pdb" cst_file="AUTO" weight=1.000 />
        </Hybridize>
        <FastRelax name="relax" scorefxn="fullatom"/>
    </MOVERS>
