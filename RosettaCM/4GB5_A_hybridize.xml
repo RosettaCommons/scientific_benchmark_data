@@ -1,7 +1,7 @@
 <ROSETTASCRIPTS>
    <SCOREFXNS>
-       <ScoreFunction name="stage1" weights="score3" symmetric="0"
-           <Reweight scoretype="atom_pair_constraint" weight="0.5"
+       <ScoreFunction name="stage1" weights="score3" symmetric="0">
+           <Reweight scoretype="atom_pair_constraint" weight="0.5"/>
        </ScoreFunction>
        <ScoreFunction name="stage2" weights="score4_smooth_cart" symmetric="0">
            <Reweight scoretype="atom_pair_constraint" weight="0.5"/>
