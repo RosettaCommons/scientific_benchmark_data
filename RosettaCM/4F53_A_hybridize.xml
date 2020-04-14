@@ -6,7 +6,7 @@
        <ScoreFunction name="stage2" weights="score4_smooth_cart" symmetric="0">
            <Reweight scoretype="atom_pair_constraint" weight="0.5"/>
        </ScoreFunction>
-       <ScoreFunction name="fullatom" weights="talaris2013_cart" symmetric="0">
+       <ScoreFunction name="fullatom" weights="ref2015_cart" symmetric="0">
            <Reweight scoretype="atom_pair_constraint" weight="0.5"/>
        </ScoreFunction>
    </SCOREFXNS>
@@ -44,4 +44,5 @@
        <Add mover="superimpose"/>
        <Add mover="run_metrics"/>
    </PROTOCOLS>
+   <OUTPUT scorefxn="ref2015" />
 </ROSETTASCRIPTS>
