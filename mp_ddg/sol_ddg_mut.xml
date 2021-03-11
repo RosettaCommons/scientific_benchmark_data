@@ -1,34 +1,34 @@
 <ROSETTASCRIPTS>
 	<SCOREFXNS>
-		<ScoreFunction name="mpframework" weights="%%scorefxn%%"/>
-		<ScoreFunction name="mpframework_repack1" weights="%%scorefxn%%">
+		<ScoreFunction name="sfxn" weights="%%scorefxn%%"/>
+		<ScoreFunction name="sfxn_repack1" weights="%%scorefxn%%">
 			<Reweight scoretype="fa_rep" weight="0.018"/>
 			<Reweight scoretype="atom_pair_constraint" weight="1.0"/>
 			<Set fa_max_dis="9.0"/>
 		</ScoreFunction>
-		<ScoreFunction name="mpframework_repack2" weights="%%scorefxn%%">
+		<ScoreFunction name="sfxn_repack2" weights="%%scorefxn%%">
                         <Reweight scoretype="fa_rep" weight="0.116"/>
                         <Reweight scoretype="atom_pair_constraint" weight="0.5"/>
                         <Set fa_max_dis="9.0"/>
                 </ScoreFunction>
-		<ScoreFunction name="mpframework_repack3" weights="%%scorefxn%%">
+		<ScoreFunction name="sfxn_repack3" weights="%%scorefxn%%">
                         <Reweight scoretype="fa_rep" weight="0.246"/>
 			<Reweight scoretype="atom_pair_constraint" weight="0.0"/>
                         <Set fa_max_dis="9.0"/>
                 </ScoreFunction>
-		<ScoreFunction name="mpframework_min1" weights="%%scorefxn%%">
+		<ScoreFunction name="sfxn_min1" weights="%%scorefxn%%">
 			<Reweight scoretype="fa_rep" weight="0.022"/>
                         <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
                 </ScoreFunction>
-                <ScoreFunction name="mpframework_min2" weights="%%scorefxn%%">
+                <ScoreFunction name="sfxn_min2" weights="%%scorefxn%%">
                         <Reweight scoretype="fa_rep" weight="0.123"/>
                         <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
                 </ScoreFunction>
-                <ScoreFunction name="mpframework_min3" weights="%%scorefxn%%">
+                <ScoreFunction name="sfxn_min3" weights="%%scorefxn%%">
                         <Reweight scoretype="fa_rep" weight="0.256"/>
                         <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
                 </ScoreFunction>
-		<ScoreFunction name="mpframework_packmin4" weights="%%scorefxn%%">
+		<ScoreFunction name="sfxn_packmin4" weights="%%scorefxn%%">
 			<Reweight scoretype="atom_pair_constraint" weight="1.0"/>
 		</ScoreFunction>
 	</SCOREFXNS>
@@ -62,15 +62,15 @@
 	<MOVERS>
 		<StoreResidueSubset name="neighbor_shell_storer" subset_name="bubble_adjacent" residue_selector="bubble_adjacent" />
 		<BackrubProtocol name="backrub" mc_kt="1.2" ntrials="15000" pivot_residue_selector="restore_neighbor_shell" task_operations="commandline_init,ex1ex2,restrict_to_repacking" recover_low="1"/>
-		<PackRotamersMover name="mutate" scorefxn="mpframework_repack1" task_operations="commandline_init,res_mutate,norepack"/>
-		<PackRotamersMover name="repack1" scorefxn="mpframework_repack1" task_operations="commandline_init,repackonly,norepack"/>
-		<PackRotamersMover name="repack2" scorefxn="mpframework_repack2" task_operations="commandline_init,repackonly,norepack"/>
-		<PackRotamersMover name="repack3" scorefxn="mpframework_repack3" task_operations="commandline_init,repackonly,norepack"/>
-		<PackRotamersMover name="repack4" scorefxn="mpframework_packmin4" task_operations="commandline_init,repackonly,norepack"/>
-		<MinMover name="min1" scorefxn="mpframework_min1" chi="1" bb="1" jump="ALL" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="5000" abs_score_convergence_threshold="1.0"/>
-		<MinMover name="min2" scorefxn="mpframework_min2" chi="1" bb="1" jump="ALL" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="5000" abs_score_convergence_threshold="1.0"/>
-		<MinMover name="min3" scorefxn="mpframework_min3" chi="1" bb="1" jump="ALL" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="5000" abs_score_convergence_threshold="1.0"/>
-		<MinMover name="min4" scorefxn="mpframework_packmin4" chi="1" bb="1" jump="ALL" type="lbfgs_armijo_nonmonotone" tolerance="0.00001" max_iter="5000" abs_score_convergence_threshold="1.0"/>
+		<PackRotamersMover name="mutate" scorefxn="sfxn_repack1" task_operations="commandline_init,res_mutate,norepack"/>
+		<PackRotamersMover name="repack1" scorefxn="sfxn_repack1" task_operations="commandline_init,repackonly,norepack"/>
+		<PackRotamersMover name="repack2" scorefxn="sfxn_repack2" task_operations="commandline_init,repackonly,norepack"/>
+		<PackRotamersMover name="repack3" scorefxn="sfxn_repack3" task_operations="commandline_init,repackonly,norepack"/>
+		<PackRotamersMover name="repack4" scorefxn="sfxn_packmin4" task_operations="commandline_init,repackonly,norepack"/>
+		<MinMover name="min1" scorefxn="sfxn_min1" chi="1" bb="1" jump="ALL" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="5000" abs_score_convergence_threshold="1.0"/>
+		<MinMover name="min2" scorefxn="sfxn_min2" chi="1" bb="1" jump="ALL" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="5000" abs_score_convergence_threshold="1.0"/>
+		<MinMover name="min3" scorefxn="sfxn_min3" chi="1" bb="1" jump="ALL" type="lbfgs_armijo_nonmonotone" tolerance="0.01" max_iter="5000" abs_score_convergence_threshold="1.0"/>
+		<MinMover name="min4" scorefxn="sfxn_packmin4" chi="1" bb="1" jump="ALL" type="lbfgs_armijo_nonmonotone" tolerance="0.00001" max_iter="5000" abs_score_convergence_threshold="1.0"/>
 		<ParsedProtocol name="relax" mode="sequence">
 			<Add mover="repack1"/>
 			<Add mover="min1"/>
@@ -90,6 +90,6 @@
 		<Add mover="backrub"/>
 		<Add mover="relax"/>
 	</PROTOCOLS>
-	<OUTPUT scorefxn="mpframework"/>
+	<OUTPUT scorefxn="sfxn"/>
 </ROSETTASCRIPTS>
 
