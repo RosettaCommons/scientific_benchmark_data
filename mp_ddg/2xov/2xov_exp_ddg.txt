@@ -26,7 +26,7 @@ res_num	mut	res	exp_num	ddg_exp
 51	A	H	141	1.12
 55	A	H	145	1.71
 60	A	H	150	0.8
-85	A	I	175	0.97
+85	A	L	175	0.97
 87	A	I	177	2.17
 90	A	I	180	0.43
 83	A	K	173	0.76
@@ -70,3 +70,4 @@ res_num	mut	res	exp_num	ddg_exp
 70	F	Y	160	0.54
 115	A	Y	205	0.58
 120	F	Y	210	1.65
+164	A	H	254	0.7
