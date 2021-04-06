@@ -1,0 +1,4 @@
+res_num	mut	res	exp_num	ddg_exp
+64	A	N	154	1.5
+111	A	S	201	1.1
+164	A	H	254	0.7

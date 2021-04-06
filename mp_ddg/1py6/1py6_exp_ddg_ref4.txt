@@ -1,0 +1,7 @@
+res_num	mut	res	exp_num	ddg_exp
+45	A	V	49	-0.5
+90	A	L	94	-3.1
+107	A	L	111	-1.7
+144	A	I	148	-2.3
+144	V	I	148	-0.9
+148	V	L	152	-1.7
