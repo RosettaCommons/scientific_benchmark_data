@@ -5,7 +5,6 @@ res_num	mut	res	exp_num	ddg_exp
 14	V	C	104	0.89
 128	A	D	218	1.42
 153	A	D	243	0.51
-178	A	D	268	1.1
 44	A	E	134	0.4
 76	A	E	166	5.46
 49	A	F	139	1.12
@@ -17,7 +16,6 @@ res_num	mut	res	exp_num	ddg_exp
 104	V	G	194	1.2
 108	V	G	198	0.64
 109	A	G	199	1.65
-109	V	G	199	1.2
 112	A	G	202	0.73
 119	V	G	209	0.57
 125	V	G	215	0.8
@@ -70,4 +68,3 @@ res_num	mut	res	exp_num	ddg_exp
 70	F	Y	160	0.54
 115	A	Y	205	0.58
 120	F	Y	210	1.65
-164	A	H	254	0.7

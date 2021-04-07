@@ -2,33 +2,40 @@
     <SCOREFXNS>
         <ScoreFunction name="sfxn" weights="%%scorefxn%%"/>
         <ScoreFunction name="sfxn_repack1" weights="%%scorefxn%%">
+            <Reweight scoretype="fa_water_to_bilayer" weight="1.5"/>
             <Reweight scoretype="fa_rep" weight="0.018"/>
             <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
             <Set fa_max_dis="9.0"/>
         </ScoreFunction>
         <ScoreFunction name="sfxn_repack2" weights="%%scorefxn%%">
+            <Reweight scoretype="fa_water_to_bilayer" weight="1.5"/>
             <Reweight scoretype="fa_rep" weight="0.116"/>
             <Reweight scoretype="atom_pair_constraint" weight="0.5"/>
             <Set fa_max_dis="9.0"/>
         </ScoreFunction>
         <ScoreFunction name="sfxn_repack3" weights="%%scorefxn%%">
+            <Reweight scoretype="fa_water_to_bilayer" weight="1.5"/>
             <Reweight scoretype="fa_rep" weight="0.246"/>
             <Reweight scoretype="atom_pair_constraint" weight="0.0"/>
             <Set fa_max_dis="9.0"/>
         </ScoreFunction>
         <ScoreFunction name="sfxn_min1" weights="%%scorefxn%%">
+            <Reweight scoretype="fa_water_to_bilayer" weight="1.5"/>
             <Reweight scoretype="fa_rep" weight="0.022"/>
             <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
         </ScoreFunction>
         <ScoreFunction name="sfxn_min2" weights="%%scorefxn%%">
+            <Reweight scoretype="fa_water_to_bilayer" weight="1.5"/>
             <Reweight scoretype="fa_rep" weight="0.123"/>
             <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
         </ScoreFunction>
         <ScoreFunction name="sfxn_min3" weights="%%scorefxn%%">
+            <Reweight scoretype="fa_water_to_bilayer" weight="1.5"/>
             <Reweight scoretype="fa_rep" weight="0.256"/>
             <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
         </ScoreFunction>
         <ScoreFunction name="sfxn_packmin4" weights="%%scorefxn%%">
+            <Reweight scoretype="fa_water_to_bilayer" weight="1.5"/>
             <Reweight scoretype="atom_pair_constraint" weight="1.0"/>
         </ScoreFunction>
     </SCOREFXNS>
