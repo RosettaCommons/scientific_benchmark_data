@@ -1,0 +1,39 @@
+# I/O
+-in:file:native 2a7o.pdb
+-in:file:fasta 2a7o.fasta
+-in:file:frag3 2a7o.cs.200.3mers
+-in:file:frag9 2a7o.cs.200.9mers
+#-out:file:silent 2a7o.denovo.out
+-out:file:silent_struct_type binary
+#-out:file:scorefile 2a7o.denovo.fsc
+#-out:nstruct 1
+
+# Abinitio
+-chemical:patch_selectors CENTROID_HA
+-abinitio:increase_cycles 1
+-abinitio:rg_reweight 0.5
+-abinitio:rsd_wt_helix 0.5
+-abinitio:rsd_wt_loop 0.5
+-abinitio:stage1_patch rdc.wts_patch
+-abinitio:stage2_patch rdc.wts_patch
+-abinitio:stage3a_patch rdc.wts_patch
+-abinitio:stage3b_patch rdc.wts_patch
+-abinitio:stage4_patch rdc.wts_patch
+-relax:fast
+-broker:setup 2a7o.tbp
+-run:protocol broker
+-reinitialize_mover_for_each_job
+-score:find_neighbors_3dgrid
+
+# Rmsd calculation
+-evaluation:rmsd NATIVE FULL	
+
+# RDC
+-nmr:rdc:input_file 2a7o.rdc.inp
+-nmr:rdc:multiset_weights 1.0
+-nmr:rdc:normalization_type none
+-nmr:rdc:correct_sign false
+
+-out:mute core.pose.nmr.rdc.RDCSingle
+
+-overwrite

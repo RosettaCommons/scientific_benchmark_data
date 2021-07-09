@@ -1,0 +1,13 @@
+# I/O
+-in:file:native 2k5u.pdb
+-score:weights ref2015
+-score:patch rdc.wts_patch
+-evaluation:rmsd NATIVE FULL	
+
+# RDC
+-nmr:rdc:input_file 2k5u.rdc.inp
+-nmr:rdc:multiset_weights 1.0 1.0 1.0
+-nmr:rdc:normalization_type none
+-nmr:rdc:correct_sign false
+
+-out:mute core.pose.nmr.rdc.RDCSingle

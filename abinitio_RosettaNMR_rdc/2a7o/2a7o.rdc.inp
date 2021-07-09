@@ -1,0 +1,9 @@
+MULTISET
+
+alignment_medium = Medium1
+computation_type = SVD
+alignment_tensor = [ -17.38, 0.321, 10.0, 10.0, 10.0 ]
+dataset          = [ <PATH>/2a7o_nh_norm2NH.dat, 1.0, SIGMA ]
+dataset          = [ <PATH>/2a7o_caha_norm2NH.dat, 1.0, SIGMA ]
+
+END

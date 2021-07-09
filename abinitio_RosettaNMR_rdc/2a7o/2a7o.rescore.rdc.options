@@ -1,0 +1,13 @@
+# I/O
+-in:file:native 2a7o.pdb
+-score:weights ref2015
+-score:patch rdc.wts_patch
+-evaluation:rmsd NATIVE FULL	
+
+# RDC
+-nmr:rdc:input_file 2a7o.rdc.inp
+-nmr:rdc:multiset_weights 1.0
+-nmr:rdc:normalization_type none
+-nmr:rdc:correct_sign false
+
+-out:mute core.pose.nmr.rdc.RDCSingle

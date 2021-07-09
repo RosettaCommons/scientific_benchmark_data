@@ -1,0 +1,26 @@
+# I/O 
+-out:file:silent_struct_type binary
+-in:file:native 2k61.pdb
+
+# Relax
+-score:weights ref2015 
+-score:patch pcs.rlx.wts_patch
+-relax:fast
+-relax:dualspace
+-relax:minimize_bond_angles
+-relax:jump_move true
+-relax:constrain_relax_to_start_coords false
+-ex1
+-ex2
+-flip_HNQ
+-no_optH false
+-set_weights cart_bonded .5 pro_close 0
+-default_max_cycles 200
+
+# PCS options
+-nmr:pcs:input_file 2k61.pcs.inp
+-nmr:pcs:optimize_tensor true
+-nmr:pcs:multiset_weights 1.0
+-nmr:pcs:show_info true
+
+-out:mute core.optimization.Minimizer core.optimization.LineMinimizer core.pose.nmr.pcs.PCSSingle

@@ -1,0 +1,38 @@
+# I/O
+-in:file:native2k61.pdb
+-in:file:fasta 2k61.fasta
+-in:file:frag3 2k61.cs.200.3mers
+-in:file:frag9 2k61.cs.200.9mers
+#-out:file:silent 2k61.denovo.out
+-out:file:silent_struct_type binary
+#-out:file:scorefile 2k61.denovo.fsc
+#-out:nstruct 1
+
+# Abinitio
+-abinitio:increase_cycles 2
+-abinitio:rg_reweight 0.5
+-abinitio:rsd_wt_helix 0.5
+-abinitio:rsd_wt_loop 0.5
+-abinitio:stage1_patch pcs.wts_patch
+-abinitio:stage2_patch pcs.wts_patch
+-abinitio:stage3a_patch pcs.wts_patch
+-abinitio:stage3b_patch pcs.wts_patch
+-abinitio:stage4_patch pcs.wts_patch
+-relax:fast
+-broker:setup 2k61.tbp
+-run:protocol broker
+-run:reinitialize_mover_for_each_job
+-score:find_neighbors_3dgrid
+
+# Rmsd calculation
+-evaluation:rmsd NATIVE FULL	
+
+# PCS options
+-nmr:pcs:input_file 2k61.pcs.inp
+-nmr:pcs:optimize_tensor true
+-nmr:pcs:multiset_weights 1.0
+-nmr:pcs:show_info true
+
+-out:mute core.optimization.Minimizer core.optimization.LineMinimizer core.pose.nmr.pcs.PCSSingle
+
+-overwrite

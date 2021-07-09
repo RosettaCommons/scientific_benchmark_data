@@ -1,0 +1,12 @@
+# I/O
+-in:file:native 1x0n.pdb
+-score:weights ref2015
+-score:patch pcs.wts_patch
+-evaluation:rmsd NATIVE FULL	
+
+# PCS
+-nmr:pcs:input_file 1x0n.pcs.inp
+-nmr:pcs:optimize_tensor true
+-nmr:pcs:multiset_weights 1.0
+
+-out:mute core.optimization.Minimizer core.optimization.LineMinimizer core.pose.nmr.pcs.PCSSingle

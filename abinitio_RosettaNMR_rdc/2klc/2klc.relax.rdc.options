@@ -1,0 +1,26 @@
+# I/O 
+-out:file:silent_struct_type binary
+-in:file:native 2klc.pdb
+
+# Relax
+-score:weights ref2015 
+-score:patch rdc.rlx.wts_patch
+-relax:fast
+-relax:dualspace
+-relax:minimize_bond_angles
+-relax:jump_move true
+-relax:constrain_relax_to_start_coords false
+-ex1
+-ex2
+-flip_HNQ
+-no_optH false
+-set_weights cart_bonded .5 pro_close 0
+-default_max_cycles 200
+
+# RDC
+-nmr:rdc:input_file 2klc.rdc.inp
+-nmr:rdc:multiset_weights 1.0
+-nmr:rdc:normalization_type none
+-nmr:rdc:correct_sign false
+
+-out:mute core.pose.nmr.rdc.RDCSingle

@@ -1,0 +1,27 @@
+MULTISET
+
+alignment_medium = Medium1
+computation_type = SVD
+alignment_tensor = [ -10.17, 0.543, 10.0, 10.0, 10.0 ]
+dataset          = [ <PATH>/2k5u_nh1_norm2NH.dat, 1.0, SIGMA ]
+
+END
+
+MULTISET
+
+alignment_medium = Medium2
+computation_type = SVD
+alignment_tensor = [ 11.18, 0.179, 10.0, 10.0, 10.0 ]
+dataset          = [ <PATH>/2k5u_nh2_norm2NH.dat, 1.0, SIGMA ]
+dataset          = [ <PATH>/2k5u_nco2_norm2NH.dat, 1.0, SIGMA ]
+
+END
+
+MULTISET
+
+alignment_medium = Medium3
+computation_type = SVD
+alignment_tensor = [ 7.04, 0.206, 10.0, 10.0, 10.0 ]
+dataset          = [ <PATH>/2k5u_cohn3_norm2NH.dat, 1.0, SIGMA ]
+
+END
