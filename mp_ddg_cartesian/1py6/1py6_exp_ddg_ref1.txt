@@ -1,0 +1,4 @@
+res_num	mut	res	exp_num	ddg_exp
+42	A	T	46	3.0
+53	F	Y	57	3.9
+46	A	P	50	1.2
