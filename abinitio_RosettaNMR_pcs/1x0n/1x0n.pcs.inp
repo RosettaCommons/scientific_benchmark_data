@@ -3,9 +3,9 @@ MULTISET
 spinlabel_position = 12
 chain_id           = A
 gridsearch         = [ CA, CB, 15.0, 5.0, 0.0, 25.0 ]
-dataset            = [ 1x0n_dy.dat, Dy, 1.0, CONST, MEAN, SVD, 40.0, 4.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
-dataset            = [ 1x0n_er.dat, Er, 1.0, CONST, MEAN, SVD, 40.0, 4.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
-dataset            = [ 1x0n_tb.dat, Tb, 1.0, CONST, MEAN, SVD, 40.0, 4.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
-dataset            = [ 1x0n_tm.dat, Tm, 1.0, CONST, MEAN, SVD, 40.0, 4.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+dataset            = [ <PATH>/1x0n_dy.dat, Dy, 1.0, CONST, MEAN, SVD, 40.0, 4.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+dataset            = [ <PATH>/1x0n_er.dat, Er, 1.0, CONST, MEAN, SVD, 40.0, 4.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+dataset            = [ <PATH>/1x0n_tb.dat, Tb, 1.0, CONST, MEAN, SVD, 40.0, 4.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
+dataset            = [ <PATH>/1x0n_tm.dat, Tm, 1.0, CONST, MEAN, SVD, 40.0, 4.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0 ]
 
 END
